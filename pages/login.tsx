@@ -19,7 +19,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
 	};
 };
 
-const login = ({ providers, session, csrfToken }) => {
+const Login = ({ providers, session, csrfToken }) => {
 	useEffect(() => {
 		const checkSession = () => {
 			if (session) return Router.push('/');
@@ -67,4 +67,4 @@ const login = ({ providers, session, csrfToken }) => {
 	);
 };
 
-export default login;
+export default Login;

@@ -26,7 +26,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
 	};
 };
 
-const index = ({ session }) => {
+const Index = ({ session }) => {
 	const [todos, setTodos] = useState([]);
 	const [loading, setLoading] = useState(false);
 
@@ -69,4 +69,4 @@ const index = ({ session }) => {
 	);
 };
 
-export default index;
+export default Index;
